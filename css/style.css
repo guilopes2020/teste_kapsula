@@ -8,6 +8,7 @@
 header {
     background-color: black;
     height: 80px;
+    padding: 0 10px;
 }
 
 header .container-header {
@@ -65,6 +66,7 @@ header .container-header {
 
 main section:nth-of-type(1) {
     background-color: #1fc0729c;
+    padding: 0 10px;
 }
 
 .section-1 {
@@ -124,19 +126,19 @@ main section:nth-of-type(1) {
     line-height: 1.2em;
 }
 
-.section-1 .textos .spans {
+.spans {
     display: flex;
     flex-direction: column;
 }
 
-.section-1 .textos .spans .lorem {
+.lorem {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 5px 0;
 }
 
-.section-1 .textos .spans .lorem .vistos {
+.vistos {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -217,6 +219,10 @@ main section:nth-of-type(1) {
     width: 100%;
 }
 
+main section:nth-of-type(3) {
+    padding: 0 10px;
+}
+
 .section-2 {
     max-width: 1100px;
     margin: auto;
@@ -292,6 +298,7 @@ main section:nth-of-type(1) {
 
 main section:nth-of-type(3) {
     background-color: #1fc0729c;
+    padding: 0 10px;
 }
 
 .section-3 {
@@ -359,6 +366,10 @@ main section:nth-of-type(3) {
     background-color: #02904b;
 }
 
+main section:nth-of-type(4) {
+    padding: 0 10px;
+}
+
 .section-4 {
     max-width: 1100px;
     margin: auto;
@@ -390,6 +401,7 @@ main section:nth-of-type(3) {
 
 main section:nth-of-type(5) {
     background-color: #d6d6d8;
+    padding: 0 10px;
 }
 
 .section-5 {
@@ -419,6 +431,10 @@ main section:nth-of-type(5) {
     justify-content: flex-end;
 }
 
+.section-5 .contrato img {
+    width: 100%;
+}
+
 .section-5 .text h1 {
     text-transform: uppercase;
     font-size: 2.3em;
@@ -436,6 +452,7 @@ main section:nth-of-type(5) {
 
 main section:nth-of-type(6) {
     background-color: #1fc0729c;
+    padding: 0 10px;
 }
 
 .section-6 {
@@ -504,6 +521,7 @@ main section:nth-of-type(6) {
 
 main section:nth-of-type(7) {
     background-color: #d6d6d8;
+    padding: 0 10px;
 }
 
 .section-7 {
@@ -558,6 +576,7 @@ main section:nth-of-type(7) {
 
 .section-7 .garantia {
     flex: 1;
+    min-width: 300px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -565,4 +584,409 @@ main section:nth-of-type(7) {
 
 .section-7 .garantia img {
     width: 60%;
+}
+
+main section:nth-of-type(8) {
+    padding: 0 10px;
+}
+
+.section-8 {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-8 h1 {
+    text-transform: uppercase;
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #02904b;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
+    margin-bottom: 10px;
+}
+
+.section-8 .perguntas {
+    width: 70%;
+}
+
+.section-8 .perguntas p {
+    margin-bottom: 15px;
+}
+
+.section-8 .perguntas .title {
+    margin: 15px 0;
+}
+
+.section-8 .perguntas .title .icon {
+    cursor: pointer;
+}
+
+.section-8 .perguntas .title span {
+    margin-left: 15px;
+}
+
+.section-8 .perguntas span:nth-of-type(1) {
+    font-size: 1.4em;
+    color: #02904b;
+    font-weight: 600;
+}
+
+.section-8 .perguntas p {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.550);
+    line-height: 1.2em;
+    margin-left: 15px;
+}
+
+.section-8 .perguntas .p1, .section-8 .perguntas .p2, .section-8 .perguntas .p3, .section-8 .perguntas .p4, .section-8 .perguntas .p5, .section-8 .perguntas .p6 {
+    display: none;
+}
+
+main section:nth-of-type(9) {
+    padding: 0 10px;
+    background-color: #d6d6d8;
+}
+
+.section-9 {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.section-9 h1 {
+    text-transform: uppercase;
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #02904b;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
+    margin-bottom: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+.section-9 span {
+    color: rgba(0, 0, 0, 0.600);
+    margin-bottom: 10px;
+}
+
+.section-9 .icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.section-9 .icons .each-icon {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.section-9 .icons .each-icon i {
+    font-size: xx-large;
+    color: #02904b;
+}
+
+.section-9 .icons .each-icon p {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.550);
+    line-height: 1.4em;
+}
+
+main section:nth-of-type(10) {
+    padding: 0 10px;
+}
+
+.section-10 {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section-10 .product {
+    flex: 1;
+    min-width: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.section-10 .product h1 {
+    text-transform: uppercase;
+    font-size: 2.2em;
+    font-weight: 500;
+    color: #02904b;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.section-10 .product strong {
+    font-weight: 900;
+}
+
+.section-10 .product .product-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.section-10 .product .product-image img {
+    width: 50%;
+}
+
+.section-10 .lorem span {
+    margin-left: 20px;
+}
+
+.section-10 .form {
+    flex: 1;
+    min-width: 325px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+}
+
+.section-10 .form .top-form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px !important;
+}
+
+.section-10 .form .top-form .oferta {
+    width: 0;
+    height: 150px !important;
+    border: 50px solid;
+    border-color: #02904b #02904b transparent #02904b;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section-10 .form .top-form .oferta p {
+    text-align: center;
+    margin-top: -35px !important;
+    font-size: 1.1em;
+    color: white;
+}
+
+.section-10 .form .top-form h1 {
+    text-transform: uppercase;
+    font-size: 2.2em;
+    font-weight: 500;
+    color: #02904b;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
+    margin-bottom: 10px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.section-10 .form .top-form strong {
+    font-weight: 900;
+}
+
+.section-10 .form .formulario {
+    flex: 4;
+    padding: 15px;
+    min-width: 250px;
+}
+
+.section-10 .form .formulario .nombre, .section-10 .form .formulario .phone, .section-10 .form .formulario .email, .section-10 .form .formulario .nasc {
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.550);
+}
+
+.section-10 .form .formulario input {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    border: none;
+    outline: 0;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.651);
+    padding-left: 20px;
+}
+
+.section-10 .form .formulario input::placeholder {
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.342);
+    padding-left: 10px;
+}
+
+.section-10 .form .formulario button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px black;
+    background-color: #02904b;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: all ease 0.3s;
+    text-transform: uppercase;
+}
+
+.section-10 .form .formulario button:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    padding: 0 10px;
+    background-color: black;
+    color: white;
+}
+
+footer .direitos {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+}
+
+.footer {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.150);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer .footer-1, .footer .footer-2, .footer .footer-3, .footer .footer-4 {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+}
+
+.footer .footer-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-1 .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-1 .image img {
+    width: 100%;
+}
+
+.footer .footer-2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .footer-2 h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.footer .footer-2 a {
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.footer .footer-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer .footer-3 h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer .footer-3 span {
+    margin-top: -5px;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer .footer-3 p {
+    text-align: left;
+}
+
+.footer .footer-3 span:last-of-type {
+    font-size: 1.6em;
+    margin-top: 10px;
+}
+
+.footer .footer-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer .footer-4 h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer .footer-4 .banners {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .footer-4 .banners .each-banner {
+    width: 50%;
+}
+
+.footer .footer-4 .banners .each-banner img {
+    width: 100%;
 }
