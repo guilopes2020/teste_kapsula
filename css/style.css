@@ -6,13 +6,12 @@
 }
 
 header {
-    background-color: black;
-    height: 80px;
+    background-color: #0B8A4E;
     padding: 0 10px;
 }
 
 header .container-header {
-    max-width: 1100px;
+    max-width: 1000px;
     height: 100%;
     margin: auto;
     display: flex;
@@ -21,56 +20,58 @@ header .container-header {
     flex-wrap: wrap;
 }
 
-.container-header .logo {
-    width: 250px;
+header .container-header .logo {
     display: flex;
-    align-items: center;
+    min-width: 250px;
     justify-content: flex-start;
     height: 80%;
+    align-items: center;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.container-header .logo img {
-    width: 45%;
-    transition: all ease 0.3s;
+header .container-header .logo img {
+    width: 40%;
 }
 
-.container-header .logo img:hover {
-    transform: scale(1.05);
-}
 
-.container-header .btn-pedido {
-    width: 250px;
+header .container-header .btn-pedido {
+    min-width: 250px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 80%;
+    height: 100%;
 }
 
-.container-header .btn-pedido button {
-    background-color: #02904b;
-    width: 80%;
-    height: 80%;
+header .container-header .btn-pedido a {
+    text-decoration: none;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: transparent;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    cursor: pointer;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
     transition: all ease 0.3s;
-    border: 0;
+    border: 2px solid white;
     outline: 0;
 }
 
-.container-header .btn-pedido button:hover {
+header .container-header .btn-pedido a:hover {
     box-shadow: 0px 0px 5px white;
 }
 
 main section:nth-of-type(1) {
-    background-color: #1fc0729c;
+    background: linear-gradient(#D6D6D8, #0B8A4E);
     padding: 0 10px;
 }
 
 .section-1 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -86,8 +87,6 @@ main section:nth-of-type(1) {
 }
 
 .section-1 .sua-marca img {
-    /*height: 100%;
-    max-width: 180px;*/
     width: 100%;
 }
 
@@ -106,15 +105,15 @@ main section:nth-of-type(1) {
 .section-1 .textos h4 {
     color: rgba(0, 0, 0, 0.600);
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 5px 0;
 }
 
 .section-1 .textos h1 {
     font-size: 2.2em;
     text-transform: uppercase;
-    color: white;
-    font-weight: 700;
+    color: #05753f;
+    font-weight: 900;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
     margin: 5px 0;
 }
@@ -122,8 +121,9 @@ main section:nth-of-type(1) {
 .section-1 .textos p {
     margin: 5px 0;
     font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.550);
+    color: rgba(0, 0, 0, 0.600);
     line-height: 1.2em;
+    font-weight: 400;
 }
 
 .spans {
@@ -155,7 +155,7 @@ main section:nth-of-type(1) {
 .section-1 .textos .spans .lorem span {
     margin-left: 10px;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 400;
     color: white;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
 }
@@ -163,7 +163,12 @@ main section:nth-of-type(1) {
 .btn-experim {
     margin-top: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all ease 0.3s;
+    box-shadow: 0px 2px 5px black;
+    border-radius: 10px;
+    background-color: #0B8A4E;
 }
 
 .btn-experim:hover {
@@ -173,7 +178,7 @@ main section:nth-of-type(1) {
 .btn-experim .icon {
     width: 40px;
     height: 50px;
-    background-color: #02904b;
+    background-color: #0B8A4E;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,15 +192,15 @@ main section:nth-of-type(1) {
     width: 80%;
 }
 
-.btn-success {
+.btn-quero {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 270px;
     height: 50px;
     padding: 10px 0;
-    background-color: #02904b;
-    color: white;
+    background-color: #0B8A4E;
+    color: white !important;
     font-size: 1em;
     text-transform: uppercase;
     font-weight: 700;
@@ -209,22 +214,20 @@ main section:nth-of-type(1) {
     flex: 2;
     min-width: 250px;
     display: flex;
-    align-items: flex-end;
-    /*align-self: flex-end;*/
+    align-items: center;
 }
 
 .section-1 .avatar img {
-    /*height: 100%;
-    max-width: 250px;*/
     width: 100%;
 }
 
-main section:nth-of-type(3) {
+main section:nth-of-type(2) {
     padding: 0 10px;
+    background: linear-gradient(#D6D6D8, white)
 }
 
 .section-2 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -249,10 +252,12 @@ main section:nth-of-type(3) {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 20px 0;
 }
 
 .section-2 .lipsums .each-lipsum {
     flex: 1;
+    min-width: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,9 +272,11 @@ main section:nth-of-type(3) {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1fc0729c;
-    margin-bottom: 10px;
+    background-color: transparent;
+    margin-bottom: 20px;
     transition: all ease 0.3s;
+    border: 4px solid #69696B;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.459);
 }
 
 .section-2 .lipsums .each-lipsum .img-lipsum:hover {
@@ -284,30 +291,32 @@ main section:nth-of-type(3) {
 .section-2 .lipsums .each-lipsum h4 {
     color: #69696b;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 .section-2 .lipsums .each-lipsum p {
     text-align: center;
     font-size: .9em;
+    line-height: 1.5em;
 }
 .benef {
     font-size: .9em;
 }
 
 main section:nth-of-type(3) {
-    background-color: #1fc0729c;
+    background: radial-gradient(#D6D6D8, #0B8A4E);
     padding: 0 10px;
 }
 
 .section-3 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .section-3 h1 {
@@ -323,12 +332,17 @@ main section:nth-of-type(3) {
     margin-bottom: 10px;
 }
 
-.section-3 .messages {
-    width: 100%;
+.section-3 .sliders {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+
+.section-3 .messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px 0;
 }
 
@@ -343,8 +357,8 @@ main section:nth-of-type(3) {
     width: 90%;
 }
 
-.section-3 .messages .each-message img:hover {
-    box-shadow: 0px 0px 10px black;
+.carousel-inner img {
+    width: 30%;
 }
 
 .section-3 .points {
@@ -368,10 +382,11 @@ main section:nth-of-type(3) {
 
 main section:nth-of-type(4) {
     padding: 0 10px;
+    background: linear-gradient(#D6D6D8, white)
 }
 
 .section-4 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     padding: 40px 0;
     display: flex;
@@ -400,12 +415,12 @@ main section:nth-of-type(4) {
 }
 
 main section:nth-of-type(5) {
-    background-color: #d6d6d8;
+    background: linear-gradient(#0B8A4E, #D6D6D8);
     padding: 0 10px;
 }
 
 .section-5 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px 0;
     display: flex;
@@ -439,7 +454,7 @@ main section:nth-of-type(5) {
     text-transform: uppercase;
     font-size: 2.3em;
     font-weight: 700;
-    color: #02904b;
+    color: white;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
     margin-bottom: 10px;
 }
@@ -451,14 +466,14 @@ main section:nth-of-type(5) {
 }
 
 main section:nth-of-type(6) {
-    background-color: #1fc0729c;
+    background: radial-gradient(#0B8A4E, #4EAD7F);
     padding: 0 10px;
 }
 
 .section-6 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -484,7 +499,6 @@ main section:nth-of-type(6) {
 }
 
 .section-6 .kaps {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -492,17 +506,14 @@ main section:nth-of-type(6) {
 }
 
 .section-6 .kaps .each-kaps {
-    width: 480px;
+    flex: 1;
+    min-width: 450px;
     background-color: white;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10px;
-}
-
-.section-6 .kaps .each-kaps:hover {
-    box-shadow: 0px 0px 10px black;
 }
 
 .section-6 .kaps .each-kaps .each-kaps-img {
@@ -520,14 +531,14 @@ main section:nth-of-type(6) {
 }
 
 main section:nth-of-type(7) {
-    background-color: #d6d6d8;
+    background: linear-gradient(#D6D6D8, #0B8A4E);
     padding: 0 10px;
 }
 
 .section-7 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -538,7 +549,7 @@ main section:nth-of-type(7) {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
 }
 
@@ -549,7 +560,7 @@ main section:nth-of-type(7) {
     color: #02904b;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .section-7 .texts h4 {
@@ -579,7 +590,7 @@ main section:nth-of-type(7) {
     min-width: 300px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .section-7 .garantia img {
@@ -588,12 +599,13 @@ main section:nth-of-type(7) {
 
 main section:nth-of-type(8) {
     padding: 0 10px;
+    background: linear-gradient(#D6D6D8, white);
 }
 
 .section-8 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -611,6 +623,7 @@ main section:nth-of-type(8) {
 
 .section-8 .perguntas {
     width: 70%;
+    cursor: pointer;
 }
 
 .section-8 .perguntas p {
@@ -619,10 +632,6 @@ main section:nth-of-type(8) {
 
 .section-8 .perguntas .title {
     margin: 15px 0;
-}
-
-.section-8 .perguntas .title .icon {
-    cursor: pointer;
 }
 
 .section-8 .perguntas .title span {
@@ -652,9 +661,9 @@ main section:nth-of-type(9) {
 }
 
 .section-9 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -663,7 +672,7 @@ main section:nth-of-type(9) {
 
 .section-9 h1 {
     text-transform: uppercase;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 900;
     color: #02904b;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
@@ -678,7 +687,6 @@ main section:nth-of-type(9) {
 }
 
 .section-9 .icons {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -688,6 +696,7 @@ main section:nth-of-type(9) {
 
 .section-9 .icons .each-icon {
     flex: 1;
+    min-width: 250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -702,19 +711,20 @@ main section:nth-of-type(9) {
 .section-9 .icons .each-icon p {
     margin-left: 20px;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1em;
     color: rgba(0, 0, 0, 0.550);
     line-height: 1.4em;
 }
 
 main section:nth-of-type(10) {
     padding: 0 10px;
+    background: linear-gradient(white, #D6D6D8);
 }
 
 .section-10 {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -761,15 +771,17 @@ main section:nth-of-type(10) {
 
 .section-10 .form {
     flex: 1;
-    min-width: 325px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0px 0px 5px black;
     border-radius: 5px;
 }
 
 .section-10 .form .top-form {
-    flex: 1;
+    width: 100%;
+    padding: 0 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -789,9 +801,10 @@ main section:nth-of-type(10) {
 
 .section-10 .form .top-form .oferta p {
     text-align: center;
-    margin-top: -35px !important;
-    font-size: 1.1em;
+    margin-top: -48px !important;
+    font-size: 1em;
     color: white;
+    font-weight: 600;
 }
 
 .section-10 .form .top-form h1 {
@@ -810,9 +823,8 @@ main section:nth-of-type(10) {
 }
 
 .section-10 .form .formulario {
-    flex: 4;
-    padding: 15px;
-    min-width: 250px;
+    width: 90%;
+    padding: 10px;
 }
 
 .section-10 .form .formulario .nombre, .section-10 .form .formulario .phone, .section-10 .form .formulario .email, .section-10 .form .formulario .nasc {
@@ -821,18 +833,26 @@ main section:nth-of-type(10) {
 }
 
 .section-10 .form .formulario input {
-    width: 100%;
+    width: 300px !important;
     height: 60px;
     margin-top: 10px;
-    border: none;
+    border: 0;
     outline: 0;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.767);
+    border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.651);
-    padding-left: 20px;
 }
 
 .section-10 .form .formulario input::placeholder {
-    font-size: 1.3em;
+    font-size: 1em;
     color: rgba(0, 0, 0, 0.342);
+    padding-left: 10px;
+}
+
+.section-10 .form .formulario input:enabled {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.829);
     padding-left: 10px;
 }
 
@@ -845,7 +865,7 @@ main section:nth-of-type(10) {
     box-shadow: 0px 0px 5px black;
     background-color: #02904b;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     cursor: pointer;
     outline: 0;
     border: 0;
@@ -872,7 +892,7 @@ footer .direitos {
 }
 
 .footer {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px 0;
     display: flex;
@@ -956,6 +976,8 @@ footer a:hover {
 
 .footer .footer-3 p {
     text-align: left;
+    margin: 10px 0;
+    font-size: .8em;
 }
 
 .footer .footer-3 span:last-of-type {
@@ -989,4 +1011,214 @@ footer a:hover {
 
 .footer .footer-4 .banners .each-banner img {
     width: 100%;
+}
+
+@media(max-width: 783px) {
+
+    header .container-header .logo {
+        width: 200px;
+    }
+    
+    header .container-header .logo img {
+        width: 100%;
+    }
+    
+    
+    header .container-header .btn-pedido {
+        width: 200px;
+    }
+    
+    header .container-header .btn-pedido a {
+        margin-bottom: 20px;
+    }
+
+    .footer .footer-1, .footer .footer-2, .footer .footer-3, .footer .footer-4 {
+        margin: 20px;
+    }
+}
+
+@media(max-width: 575px) {
+
+    header .container-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header .container-header .logo {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .container-header .logo img {
+        width: 100%;
+    }
+    
+    
+    header .container-header .btn-pedido {
+        min-width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    
+    header .container-header .btn-pedido a {
+        margin-bottom: 20px;
+    }
+
+    .section-2 .lipsums .each-lipsum {
+        margin: 10px 0;
+    }
+    
+
+    .section-2 h1 {
+        width: 100%;
+    }
+
+    .section-4 h4 {
+        text-align: center;
+        
+    }
+    
+    .section-4 h1 {
+        text-align: center;
+    }
+    
+    .section-4 .video-kapsula {
+        width:95%;
+    }
+
+    .section-5 .contrato {
+        padding: 20px 0;
+    }
+
+    .section-5 .text {
+        align-items: center;
+    }
+
+    .section-6 .kaps .each-kaps {
+        min-width: 250px;
+    }
+
+    .section-7 .garantia {
+        padding-top: 30px;
+    }
+
+    .section-9 h1 {
+        width: 100%;
+    }
+
+    .section-10 .product {
+        flex: 1;
+        min-width: 225px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section-10 .product h1 {
+        text-transform: uppercase;
+        font-size: 2.2em;
+        font-weight: 500;
+        color: #02904b;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .section-10 .product strong {
+        font-weight: 900;
+    }
+    
+    .section-10 .product .product-image {
+        justify-content: center;
+    }
+    
+    .section-10 .product .product-image img {
+        width: 100%;
+    }
+    
+    .section-10 .lorem span {
+        margin-left: 20px;
+    }
+
+    .section-10 .form {
+        margin-top: 20px;
+        min-width: 255px;
+    }
+
+    .section-10 .form .formulario input {
+        width: 220px !important;
+    }
+
+    .section-10 .form .top-form h1 {
+        font-size: 1.8em;
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 350px) {
+    .btn-quero {
+        width: 200px;
+        font-size: .8em;
+    }
+
+    .section-1 .textos {
+        min-width: 200px;
+    }
+    
+    .section-1 .textos h4 {
+        font-size: .8em;
+    }
+    
+    .section-1 .textos h1 {
+        font-size: 1.8em;
+    }
+
+    .section-5 .text {
+        flex: 1;
+        min-width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .section-5 .contrato {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section-5 .contrato img {
+        width: 100%;
+    }
+    
+    .section-5 .text h1 {
+        text-transform: uppercase;
+        font-size: 2.3em;
+        font-weight: 700;
+        color: white;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.500);
+        margin-bottom: 10px;
+    }
+    
+    .section-5 .text p {
+        font-size: 1.2em;
+        color: rgba(0, 0, 0, 0.550);
+        line-height: 1.2em;
+    }
+
+    .section-10 .form .formulario input {
+        width: 200px !important;
+    }
+
+    .section-10 .form .top-form h1 {
+        font-size: 1.8em;
+        margin-left: 10px;
+    }
 }
